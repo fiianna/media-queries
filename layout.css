@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600&display=swap');
+
+/* Tämä sivusto on tehty mobile -first */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Glory', sans-serif;
+    padding: 1rem;
+    background-color: lightsalmon;
+    color: darkmagenta;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: solid darkmagenta 0.1rem;
+    border-bottom: 0;
+}
+
+.mobile {
+    background-color: darkmagenta;
+    color: lightsalmon;
+    padding: 1rem;
+    margin: -1rem -1rem 0 -1rem;
+
+    display: inline-block;
+}
+
+.tablet {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    padding: 1rem;
+    margin: -1rem -1rem 0 -1rem;
+
+    display: none;
+}
+
+.laptop {
+    background-color: darkgoldenrod;
+    color: lemonchiffon;
+    padding: 1rem;
+    margin: -1rem -1rem 0 -1rem;
+    display: none;
+}
+
+
+/* Tablet -sääännöt voimassa silloin, kun näytön leveys on 426px tai enemmän */
+
+@media only screen and (min-width: 426px) {
+    body {
+      background-color: darkolivegreen;
+      color: blanchedalmond;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: inline-block;
+    }
+
+    hr {
+        border: solid blanchedalmond 0.1rem;
+        border-bottom: 0;
+    }
+  }
+
+  /* Laptop -säännöt voimassa silloin, kun näytön leveys on 769px tai enemmän */
+  
+  @media screen and (min-width: 769px) {
+    body {
+      background-color: lemonchiffon;
+      color: darkgoldenrod;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .laptop {
+        display: inline-block;
+    }
+
+    hr {
+        border: solid darkgoldenrod 0.1rem;
+        border-bottom: 0;
+    }
+  }
+
+
